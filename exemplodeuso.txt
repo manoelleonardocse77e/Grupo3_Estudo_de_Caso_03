@@ -1,0 +1,39 @@
+# Exemplo de uso para o módulo 3, gestão de créditos.
+sistema_creditos = SistemaGestaoCreditos()
+
+# Adicionando clientes
+sistema_creditos.adicionar_cliente("Cliente1")
+sistema_creditos.adicionar_cliente("Cliente2")
+
+# Adicionando itens aprovados e atribuindo créditos
+sistema_creditos.adicionar_item_aprovado("Cliente1", "ItemA", 10)
+sistema_creditos.adicionar_item_aprovado("Cliente1", "ItemB", 15)
+sistema_creditos.adicionar_item_aprovado("Cliente2", "ItemC", 20)
+
+# Obtendo créditos dos clientes
+credito_cliente1 = sistema_creditos.obter_creditos_cliente("Cliente1")
+credito_cliente2 = sistema_creditos.obter_creditos_cliente("Cliente2")
+
+print(f'Créditos do Cliente1: {credito_cliente1}')
+print(f'Créditos do Cliente2: {credito_cliente2}')
+
+____________________________________________________________________________
+
+# Exemplo de uso para o módulo 4, sistema de troca de itens.
+sistema_troca_itens = SistemaTrocaItens()
+
+# Adicionando clientes
+sistema_troca_itens.adicionar_cliente("Cliente1", saldo_inicial=30)
+sistema_troca_itens.adicionar_cliente("Cliente2", saldo_inicial=25)
+
+# Adicionando itens selecionados e atualizando créditos
+sistema_troca_itens.adicionar_item_selecionado("Cliente1", "ItemX", 10)
+sistema_troca_itens.adicionar_item_selecionado("Cliente1", "ItemY", 15)
+sistema_troca_itens.adicionar_item_selecionado("Cliente2", "ItemZ", 20)
+
+# Obtendo itens selecionados pelos clientes
+itens_cliente1 = sistema_troca_itens.obter_itens_selecionados("Cliente1")
+itens_cliente2 = sistema_troca_itens.obter_itens_selecionados("Cliente2")
+
+print(f'Itens selecionados pelo Cliente1: {itens_cliente1}')
+print(f'Itens selecionados pelo Cliente2: {itens_cliente2}')
