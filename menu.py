@@ -1,5 +1,13 @@
 # menu.py
 from senha import alterar_senha, obter_senha
+import modulo_1_e_2 as md1_2
+import modulo_3 as md3
+import modulo_4 as md4
+import modulo_5 as md5
+import modulo_6 as md6
+import modulo_7 as md7
+import modulo_8_e_9 as md8_9
+import modulo_10 as md10
 
 def login(cargos, lista_senhas):
     cargo = input("Digite seu cargo (gerente/funcionario/cliente): ").lower()
@@ -25,11 +33,11 @@ def menu_gerente(senhas):
     chave = input('')
     while True:
     if chave == '1':
-      modulo()
+      md7.modulo()
     elif chave == '2':
-      modulo()
+      md9.modulo()
     elif chave == '3':
-      modulo()
+      md10.modulo()
     elif chave == '4':
       break
     else:
@@ -73,13 +81,13 @@ def menu_cliente():
     chave = input('')
     while True:
     if chave == '1':
-      modulo()
+      md1_2.modulo()
     elif chave == '2':
-      modulo()
+      md4.modulo()
     elif chave == '3':
-      modulo()
+      md5.modulo()
     elif chave == '4':
-      modulo()
+      md6.modulo()
     elif chave == '5':
       break
     else:
